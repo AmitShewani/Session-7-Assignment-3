@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 7.3 - Front End Web Development Fundamentals</title>
+	<style type="text/css">
+		/*Applying basic style to h1 and body contents*/
+		h1
+		{
+			color:blue;
+			font-size: 30px;
+			font-family: arial;
+			text-decoration: underline;
+		}
+		body
+		{
+			font-size: 18px;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body>
+<h1>Tutorial to demonstrate setTimeout functionality along with anonymous function!</h1>
+<br>
+<p>Click the below button to show alert after 5 seconds!</p><br>
+<!--On clicking this button a time out is set for 5 seconds and then the alert method is called -->
+<input type="button" name="btn" value="Click Me" onclick="setTimeout(callAlert, 5000)">
+<script type="text/javascript">
+	function callAlert()
+	{
+		/*An Anonymous method is assign to testMethod variable and when this variable is executed, alert method is displayed!*/
+		var testMethod=function (){
+		alert("This message is displayed after 5 seconds!!!");			
+		}
+
+		testMethod();
+
+	}
+</script>
+</body>
+</html>
